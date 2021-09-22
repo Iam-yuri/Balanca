@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="Description" content="Uma Balança que calcula se uma pessoa está com o peso ideal ou acima do peso">
+    <meta name="keywords" content="Peso, altura.">
+    <meta name="author" content="Yuri Prado dos Reis">
+    <title>Balança</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <input type="range" min="20" max="200" value="20" id="weigth" oninput="calculate()">
+            <span id="weigth-val">20 kg</span>
+        </div>
+        <div class="row">
+            <input type="range" min="100" max="250" value="100" id="height" oninput="cauculate()">
+            <span id="height-val">100 cm</span>
+        </div>
+        <p id="result">20.0</p>
+        <p id="category">Normal weigth</p>
+    </div>
+
+    <!--SCRIPT-->
+    <script src="/javascript/script.js"></script>
+</body>
+
+</html>
